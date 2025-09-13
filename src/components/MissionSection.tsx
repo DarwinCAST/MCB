@@ -22,8 +22,8 @@ const MissionSection = () => {
                 </div>
                 <CardTitle className="text-2xl">Misión</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
+              <CardContent className="">
+                <p className="text-muted-foreground text-lg">
                   Capacitar y asesorar estratégicamente a instituciones, emprendedores y profesionales 
                   en microfinanzas, análisis crediticio, gestión de negocios y cumplimiento tributario. 
                   Proporcionamos soluciones innovadoras basadas en conocimiento profundo para maximizar 
@@ -40,7 +40,7 @@ const MissionSection = () => {
                 <CardTitle className="text-2xl">Visión</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-lg">
                   Ser la consultora líder y referente en América Latina y el Caribe en desarrollo 
                   de capacidades empresariales en microfinanzas, análisis crediticio, negocios e 
                   impuestos, impulsando la sostenibilidad y el crecimiento económico inclusivo.
@@ -74,8 +74,8 @@ const MissionSection = () => {
                 <div className="w-12 h-12 bg-MCBSecundary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <span className="text-MCBSecundary font-bold">E</span>
                 </div>
-                <h4 className="font-semibold mb-2">Excelencia</h4>
-                <p className="text-sm text-muted-foreground">
+                <h4 className="font-semibold mb-2 text-2xl">Excelencia</h4>
+                <p className="text-lg text-muted-foreground">
                   Ofrecemos servicios de la más alta calidad, superando expectativas a través de 
                   la actualización constante y búsqueda de mejora continua.
                 </p>
@@ -85,8 +85,8 @@ const MissionSection = () => {
                 <div className="w-12 h-12 bg-MCBSecundary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <span className="text-MCBSecundary font-bold">I</span>
                 </div>
-                <h4 className="font-semibold mb-2">Integridad</h4>
-                <p className="text-sm text-muted-foreground">
+                <h4 className="font-semibold mb-2 text-2xl">Integridad</h4>
+                <p className="text-lg text-muted-foreground">
                   Actuamos con transparencia, honestidad y ética profesional. Construimos 
                   relaciones de confianza basadas en confidencialidad y respeto.
                 </p>
@@ -96,8 +96,8 @@ const MissionSection = () => {
                 <div className="w-12 h-12 bg-MCBSecundary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <span className="text-MCBSecundary font-bold">I</span>
                 </div>
-                <h4 className="font-semibold mb-2">Impacto Social</h4>
-                <p className="text-sm text-muted-foreground">
+                <h4 className="font-semibold mb-2 text-2xl">Impacto Social</h4>
+                <p className="text-lg text-muted-foreground">
                   Creemos en el poder transformador de la educación para generar impacto 
                   positivo y empoderar a nuestros clientes.
                 </p>
@@ -107,8 +107,8 @@ const MissionSection = () => {
                 <div className="w-12 h-12 bg-MCBSecundary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <span className="text-MCBSecundary font-bold">I</span>
                 </div>
-                <h4 className="font-semibold mb-2">Innovación</h4>
-                <p className="text-sm text-muted-foreground">
+                <h4 className="font-semibold mb-2 text-2xl">Innovación</h4>
+                <p className="text-lg text-muted-foreground">
                   Buscamos constantemente nuevas metodologías y herramientas para abordar 
                   los desafíos de nuestros clientes.
                 </p>
@@ -118,8 +118,8 @@ const MissionSection = () => {
                 <div className="w-12 h-12 bg-MCBSecundary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <span className="text-MCBSecundary font-bold">C</span>
                 </div>
-                <h4 className="font-semibold mb-2">Colaboración</h4>
-                <p className="text-sm text-muted-foreground">
+                <h4 className="font-semibold mb-2 text-2xl">Colaboración</h4>
+                <p className="text-lg text-muted-foreground">
                   Valoramos el trabajo en equipo interno y con clientes. La sinergia 
                   conduce a los mejores resultados.
                 </p>
@@ -129,8 +129,8 @@ const MissionSection = () => {
                 <div className="w-12 h-12 bg-MCBSecundary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <span className="text-MCBSecundary font-bold">O</span>
                 </div>
-                <h4 className="font-semibold mb-2">Orientación al Cliente</h4>
-                <p className="text-sm text-muted-foreground">
+                <h4 className="font-semibold mb-2 text-2xl">Orientación al Cliente</h4>
+                <p className="text-lg text-muted-foreground">
                   La satisfacción del cliente es nuestra prioridad. Diseñamos soluciones 
                   personalizadas para alcanzar sus metas.
                 </p>

@@ -68,7 +68,7 @@ const ObjectivesSection = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-muted-foreground">{objective.description}</p>
+                  <p className="text-muted-foreground text-lg">{objective.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -76,31 +76,7 @@ const ObjectivesSection = () => {
         </div>
 
         {/* Key Metrics */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          <Card variant="elevated" className="text-center p-8 animate-fade-in">
-            <div className="text-4xl font-bold text-MCBSecundary mb-2">19+</div>
-            <div className="text-lg font-semibold mb-2">Talleres Disponibles</div>
-            <div className="text-sm text-muted-foreground">
-              Desde liderazgo hasta finanzas personales y gestión empresarial
-            </div>
-          </Card>
-
-          <Card variant="elevated" className="text-center p-8 animate-fade-in">
-            <div className="text-4xl font-bold text-MCBSecundary mb-2">8-60</div>
-            <div className="text-lg font-semibold mb-2">Horas de Capacitación</div>
-            <div className="text-sm text-muted-foreground">
-              Duración flexible según el taller y las horas prácticas requeridas
-            </div>
-          </Card>
-
-          <Card variant="elevated" className="text-center p-8 animate-fade-in">
-            <div className="text-4xl font-bold text-MCBSecundary mb-2">100%</div>
-            <div className="text-lg font-semibold mb-2">Modalidad Online</div>
-            <div className="text-sm text-muted-foreground">
-              Capacitación especializada dirigida a ejecutivos, gerentes y profesionales
-            </div>
-          </Card>
-        </div>
+       
       </div>
     </section>
   )

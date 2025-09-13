@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/enhanced-button";
 import heroImage from "@/assets/hero-image.jpeg";
 import logo from "@/assets/SmallLogo.png";
-
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
     <>
-      <section id="contacto" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-MCB">
+      <section
+        id="contacto"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-MCB"
+      >
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
@@ -42,9 +45,11 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in">
-            <Button variant="glass" size="xl">
-              Capacitaciones
-            </Button>
+            <Link to="/Courses">
+              <Button variant="glass" size="xl">
+                Capacitaciones
+              </Button>
+            </Link>
             <Button variant="hero" size="xl">
               Conoce Más
             </Button>

@@ -4,7 +4,8 @@ import MissionSection from "@/components/MissionSection";
 import ObjectivesSection from "@/components/ObjectivesSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Facilitors from "@/components/Facilitors";
+import ListOfFacilitors from "@/components/ListOfFacilitors";
+import TrainingSection from "@/components/TrainingSection";
 
 const Index = () => {
   return (
@@ -14,8 +15,8 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <MissionSection />
-      <Facilitors/>
       <ObjectivesSection />
+      <TrainingSection />
       <Footer />
     </div>
   );

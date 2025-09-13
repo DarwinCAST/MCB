@@ -9,7 +9,7 @@ const AboutSection = () => {
             ¿Quiénes Somos?
           </h2>
           <div className="w-24 h-1 bg-MCBSecundary mx-auto mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-2xl text-muted-foreground max-w-4xl mx-auto">
             Microfinance Consulting & Business nace en el 2008, constituida por un equipo de 
             profesionales de diferentes áreas como el sector financiero, bancario, tributario, 
             agropecuario y empresarial para contribuir con el desarrollo y fortalecimiento del 
@@ -21,10 +21,10 @@ const AboutSection = () => {
           <div className="space-y-6">
             <Card variant="glass" className="animate-slide-in">
               <CardHeader>
-                <CardTitle className=" font-bold">Nuestra Actividad Principal</CardTitle>
+                <CardTitle className=" font-bold text-2xl">Nuestra Actividad Principal</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-lg">
                   Actualmente la mayor actividad de MIFCOB se desarrolla en línea, implementando 
                   programas, proyectos y actividades de capacitación, desarrollo empresarial del 
                   sector de Micro y Pequeñas Empresas, instituciones microfinancieras, bancos de 
@@ -35,10 +35,10 @@ const AboutSection = () => {
 
             <Card variant="glass" className="animate-slide-in">
               <CardHeader>
-                <CardTitle className=" font-bold">Nuestro Enfoque</CardTitle>
+                <CardTitle className=" font-bold text-2xl">Nuestro Enfoque</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-lg">
                   Nos especializamos en microfinanzas, análisis crediticio, gestión de negocios 
                   y cumplimiento tributario, dotando a nuestros clientes de las técnicas y 
                   herramientas necesarias para su crecimiento laboral y profesional.

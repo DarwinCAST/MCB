@@ -38,9 +38,7 @@ export default function ListOfCourses() {
                       <p className="bg-yellow-400 px-5 rounded-sm font-bold py-1 text-accent-foreground text-xs">
                         {curso.categoria}
                       </p>
-                      <p className="border-2 border-black bg-MCBThird px-5 rounded-sm font-bold py-1  text-xs ">
-                        {curso.nivel}
-                      </p>
+                     
                       <div className="flex items-center text-sm text-muted-foreground">
                         <Clock className="w-3 h-3 mr-1" />
                         {curso.duracion}

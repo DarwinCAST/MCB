@@ -8,6 +8,7 @@ import { DayPickerProvider } from "react-day-picker";
 import { Outlet } from "react-router-dom"; // si usas React Router
 import NotFound from "./pages/NotFound";
 import Courses from "./pages/Courses";
+import Facilitors from "./pages/Facilitors";
 
 
 const queryClient = new QueryClient();
@@ -25,7 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/Courses" element={<Courses />} />
           <Route path="/Home" element={<Index />} />
-
+          <Route path="/Facilitors" element={<Facilitors />}></Route>
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

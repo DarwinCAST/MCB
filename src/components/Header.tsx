@@ -9,7 +9,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <Link to="/Home">
-              <img src={logo} alt="MCB Logo" className="h-14 w-auto" />
+              <img src={logo} alt="MCB Logo" className="h-24 w-40" />
             </Link>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
@@ -26,12 +26,12 @@ export default function Header() {
             >
               Nosotros
             </a>
-            <a
-              href="#facilitadores"
+            <Link
+              to="/Facilitors"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
             >
               Facilitadores
-            </a>
+            </Link>
             <a
               href="#contacto"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
