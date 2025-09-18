@@ -66,13 +66,13 @@ export default function Header() {
             >
               Capacitaciones
             </Link>
-            <a
-              href="#nosotros"
+            <Link
+              to="/AboutUs"
               onClick={() => setOpen(false)}
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
             >
               Nosotros
-            </a>
+            </Link>
             <Link
               to="/Facilitors"
               onClick={() => setOpen(false)}
@@ -80,13 +80,13 @@ export default function Header() {
             >
               Facilitadores
             </Link>
-            <a
-              href="#contacto"
+            <Link
+              to="/Contact"
               onClick={() => setOpen(false)}
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
             >
               Contacto
-            </a>
+            </Link>
           </div>
         )}
       </div>
