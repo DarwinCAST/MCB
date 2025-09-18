@@ -1,17 +1,33 @@
+import { useState } from "react";
 import logo from "@/assets/SmallLogo.png";
 import { Button } from "./ui/enhanced-button";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header className="border-b  border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+    <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
       <div className="container max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
+          {/* Logo */}
           <div className="flex items-center space-x-3">
             <Link to="/Home">
-              <img src={logo} alt="MCB Logo" className="h-24 w-40" />
+              <img src={logo} alt="MCB Logo" className="h-20 w-32 sm:h-24 sm:w-40" />
             </Link>
           </div>
+
+          {/* Botón Hamburguesa en móviles */}
+          <button
+            className="md:hidden p-2 text-foreground hover:text-lime-700 transition-colors"
+            onClick={() => setOpen(!open)}
+            aria-label="Abrir menú"
+          >
+            {open ? <X size={28} /> : <Menu size={28} />}
+          </button>
+
+          {/* Menú desktop */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               to="/Courses"
@@ -19,27 +35,60 @@ export default function Header() {
             >
               Capacitaciones
             </Link>
-          
-            <a
-              href="#nosotros"
+            <Link
+              to="/AboutUs"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
             >
               Nosotros
-            </a>
+            </Link>
             <Link
               to="/Facilitors"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
             >
               Facilitadores
             </Link>
-            <a
-              href="#contacto"
+            <Link
+              to="/Contact"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
             >
               Contacto
-            </a>
+            </Link>
           </nav>
         </div>
+
+        {/* Menú móvil desplegable */}
+        {open && (
+          <div className="md:hidden mt-4 flex flex-col space-y-4">
+            <Link
+              to="/Courses"
+              onClick={() => setOpen(false)}
+              className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
+            >
+              Capacitaciones
+            </Link>
+            <a
+              href="#nosotros"
+              onClick={() => setOpen(false)}
+              className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
+            >
+              Nosotros
+            </a>
+            <Link
+              to="/Facilitors"
+              onClick={() => setOpen(false)}
+              className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
+            >
+              Facilitadores
+            </Link>
+            <a
+              href="#contacto"
+              onClick={() => setOpen(false)}
+              className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
+            >
+              Contacto
+            </a>
+          </div>
+        )}
       </div>
     </header>
   );

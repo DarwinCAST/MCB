@@ -1,12 +1,14 @@
 import { Award, Badge, BookOpen, Users } from "lucide-react";
 import React from "react";
-import {
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "./ui/enhanced-card";
-import { Card, CardContent } from "@/components/ui/card"
-import { Linkedin, Globe, Mail } from "lucide-react"
+import { CardDescription, CardHeader, CardTitle } from "./ui/enhanced-card";
+import { Card, CardContent } from "@/components/ui/card";
+import { Linkedin, Globe, Mail } from "lucide-react";
+import Kerbin from "@/assets/Kerbin.jpeg";
+import Engels from "@/assets/Engels.jpeg";
+import Hovel from "@/assets/Hovel.jpeg";
+import JoseMiguel from "@/assets/JoseMiguel.jpeg";
+
+
 
 const teamMembers = [
   {
@@ -14,7 +16,7 @@ const teamMembers = [
     title: "CEO & Economista",
     description:
       "Economista con pos-grados en Finanzas y maestría en Banca y Mercados de valores. Profesor universitario, conferencista internacional y consultor empresarial.",
-    image: "/professional-businessman-economist-with-suit.jpg",
+    image: Engels,
     social: {
       linkedin: "#",
       website: "#",
@@ -22,11 +24,11 @@ const teamMembers = [
     },
   },
   {
-    name: "Licdo. Eddy Santana",
-    title: "Director Comercial",
+    name: "Licdo. Hovel Matos Custodio",
+    title: "Contable",
     description:
-      "Contador experto en Microfinanzas con más de 20 años en posiciones gerenciales. Ex-director comercial de Banco Adopem con equipo de 800+ personas.",
-    image: "/professional-accountant-manager-with-business-atti.jpg",
+      "Contador, con post-Grados en Finanzas y Maestría en Banca y Mercados de Valores, más de 20 años de experiencia en el sector de las Micro Finanzas, desempeñando varios cargos de dirección. Además, es emprendedor del sector agrícola. ",
+    image: Hovel,
     social: {
       linkedin: "#",
       website: "#",
@@ -38,25 +40,27 @@ const teamMembers = [
     title: "Experto Tributario",
     description:
       "Contador y profesor universitario con maestría en Relaciones Económicas Internacionales. 15 años de experiencia en la DGII.",
-    image: "/professional-tax-expert-accountant-with-glasses.jpg",
+    image: Kerbin,
     social: {
       linkedin: "#",
       website: "#",
       email: "#",
     },
   },
-  {
+   {
     name: "Ing. José Miguel Méndez",
     title: "Consultor Internacional",
     description:
       "Ingeniero Agrónomo con maestría en Economía. Consultor de organismos internacionales como CODESPA, BID, FEDA e Instituto Nacional del Café.",
-    image: "/professional-agricultural-engineer-consultant-with.jpg",
+    image: JoseMiguel,
     social: {
       linkedin: "#",
       website: "#",
       email: "#",
     },
   },
+
+  /*
   {
     name: "Licda. Enercida Castillo",
     title: "Directora de Formación",
@@ -80,21 +84,27 @@ const teamMembers = [
       website: "#",
       email: "#",
     },
-  },
-]
-
+  }, */
+];
 
 export default function ListOfFacilitors() {
   return (
     <section className="py-16 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance" style={{ color: "#4a5952" }}>
-          Así somos
+        <h2
+          className="text-4xl md:text-5xl font-bold mb-6 text-balance"
+          style={{ color: "#4a5952" }}
+        >
+          Nuestra familia
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-          Especialistas en crear contenidos. Investigadores de los lugares más recónditos de Google. Amantes de la gente
-          que escribe guion sin tilde. Rápidos hasta donde la calidad no se deteriora. Eficaces en llevar a cabo un
-          plan, tu plan. Y más allá de todo eso, tu equipo.
+          Contamos con instructores capacitados en diferentes campos
+          profesionales, de acuerdo a la acción a impartir que cuentan con las
+          competencias técnicas y conductuales, herramientas metodológicas
+          modernas, con habilidades para desarrollar guías pedagógicas que
+          facilitan y permiten optimizar los resultados del proceso de
+          enseñanza-aprendizaje, más abajo compartimos algunos de nuestra
+          amplios colaboradores.
         </p>
       </div>
 
@@ -114,22 +124,30 @@ export default function ListOfFacilitors() {
                   <img
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-40 object-cover"
                   />
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold mb-2" style={{ color: "#4a5952" }}>
+              <h3
+                className="text-xl font-bold mb-2"
+                style={{ color: "#4a5952" }}
+              >
                 {member.name}
               </h3>
 
-              <p className="font-semibold mb-4 text-sm uppercase tracking-wide" style={{ color: "#a18700" }}>
+              <p
+                className="font-semibold mb-4 text-sm uppercase tracking-wide"
+                style={{ color: "#a18700" }}
+              >
                 {member.title}
               </p>
 
-              <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{member.description}</p>
+              <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
+                {member.description}
+              </p>
 
-              <div className="flex justify-center space-x-4">
+             {/*  <div className="flex justify-center space-x-4">
                 <a
                   href={member.social.linkedin}
                   className="p-2 rounded-full transition-colors duration-200 hover:bg-opacity-10"
@@ -138,12 +156,12 @@ export default function ListOfFacilitors() {
                     backgroundColor: "transparent",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = "#a18700"
-                    e.currentTarget.style.color = "white"
+                    e.currentTarget.style.backgroundColor = "#a18700";
+                    e.currentTarget.style.color = "white";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = "transparent"
-                    e.currentTarget.style.color = "#4a5952"
+                    e.currentTarget.style.backgroundColor = "transparent";
+                    e.currentTarget.style.color = "#4a5952";
                   }}
                 >
                   <Linkedin size={18} />
@@ -156,12 +174,12 @@ export default function ListOfFacilitors() {
                     backgroundColor: "transparent",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = "#a18700"
-                    e.currentTarget.style.color = "white"
+                    e.currentTarget.style.backgroundColor = "#a18700";
+                    e.currentTarget.style.color = "white";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = "transparent"
-                    e.currentTarget.style.color = "#4a5952"
+                    e.currentTarget.style.backgroundColor = "transparent";
+                    e.currentTarget.style.color = "#4a5952";
                   }}
                 >
                   <Globe size={18} />
@@ -174,17 +192,17 @@ export default function ListOfFacilitors() {
                     backgroundColor: "transparent",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = "#a18700"
-                    e.currentTarget.style.color = "white"
+                    e.currentTarget.style.backgroundColor = "#a18700";
+                    e.currentTarget.style.color = "white";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = "transparent"
-                    e.currentTarget.style.color = "#4a5952"
+                    e.currentTarget.style.backgroundColor = "transparent";
+                    e.currentTarget.style.color = "#4a5952";
                   }}
                 >
                   <Mail size={18} />
                 </a>
-              </div>
+              </div> */}
             </CardContent>
           </Card>
         ))}

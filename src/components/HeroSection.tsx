@@ -50,9 +50,11 @@ const HeroSection = () => {
                 Capacitaciones
               </Button>
             </Link>
-            <Button variant="hero" size="xl">
-              Conoce Más
-            </Button>
+            <Link to="/AboutUs">
+              <Button variant="hero" size="xl">
+                Conoce Más
+              </Button>
+            </Link>
           </div>
         </div>
 
