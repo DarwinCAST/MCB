@@ -8,8 +8,6 @@ import Engels from "@/assets/Engels.jpeg";
 import Hovel from "@/assets/Hovel.jpeg";
 import JoseMiguel from "@/assets/JoseMiguel.jpeg";
 
-
-
 const teamMembers = [
   {
     name: "Licdo. Engels Fortuna",
@@ -47,11 +45,11 @@ const teamMembers = [
       email: "#",
     },
   },
-   {
+  {
     name: "Ing. José Miguel Méndez",
     title: "Consultor Internacional",
     description:
-      "Ingeniero Agrónomo con maestría en Economía. Consultor de organismos internacionales como CODESPA, BID, FEDA e Instituto Nacional del Café.",
+      "Ing. Agrónomo, orientación Economía Agrícola, máster en Agroforestería. Profesor de universidades ISA, UTESA, UCATECI, UAFAM. Fortaleza en eleaboración de proyectos y planes de negocios, diseño de productos financieros verdes.",
     image: JoseMiguel,
     social: {
       linkedin: "#",
@@ -147,7 +145,7 @@ export default function ListOfFacilitors() {
                 {member.description}
               </p>
 
-             {/*  <div className="flex justify-center space-x-4">
+              {/*  <div className="flex justify-center space-x-4">
                 <a
                   href={member.social.linkedin}
                   className="p-2 rounded-full transition-colors duration-200 hover:bg-opacity-10"

@@ -156,3 +156,147 @@ export const cursos = [
     categoria: "Liderazgo",
   },
 ];
+
+export const consultorias = [
+  {
+    id: 1,
+    titulo: "Diseño, desarrollo e implementación de productos de microfinancieros",
+    descripcion: "Creación y puesta en marcha de soluciones financieras adaptadas a microempresas."
+  },
+  {
+    id: 2,
+    titulo: "Administración, dirección y gestión de carteras",
+    descripcion: "Optimización del manejo de carteras de clientes y créditos activos."
+  },
+  {
+    id: 3,
+    titulo: "Programas de emprendimiento y planes de negocio",
+    descripcion: "Implementación de programas para apoyar la elaboración de planes de negocio."
+  },
+  {
+    id: 4,
+    titulo: "Investigación de mercados financieros",
+    descripcion: "Análisis de mercado para diseñar y validar productos financieros innovadores."
+  },
+  {
+    id: 5,
+    titulo: "Asesoría en estrategias de negocios",
+    descripcion: "Orientación en la definición e implementación de estrategias empresariales."
+  },
+  {
+    id: 6,
+    titulo: "Diseño e implementación de proyectos de microfinanzas",
+    descripcion: "Aplicación de metodologías como bancos comunales, microcrédito y grupos solidarios."
+  },
+  {
+    id: 7,
+    titulo: "Estudios de mercado orientados al cliente",
+    descripcion: "Investigación de necesidades para crear soluciones financieras a medida."
+  },
+  {
+    id: 8,
+    titulo: "Diagnósticos de expansión geográfica",
+    descripcion: "Evaluación de oportunidades para ampliar operaciones en nuevos territorios."
+  },
+  {
+    id: 9,
+    titulo: "Productos de microahorro",
+    descripcion: "Diseño e implementación de soluciones accesibles de ahorro."
+  },
+  {
+    id: 10,
+    titulo: "Productos de microcrédito",
+    descripcion: "Desarrollo de líneas de crédito adaptadas a microempresas y emprendedores."
+  },
+  {
+    id: 11,
+    titulo: "Diagnósticos institucionales",
+    descripcion: "Evaluación de procesos y estructura para mejorar la organización interna."
+  },
+  {
+    id: 12,
+    titulo: "Gestión integral de riesgos",
+    descripcion: "Fortalecimiento de políticas y controles para reducir riesgos financieros."
+  },
+  {
+    id: 13,
+    titulo: "Mejoras en control interno",
+    descripcion: "Actualización de sistemas de supervisión y auditoría interna."
+  },
+  {
+    id: 14,
+    titulo: "Procesos crediticios modernos",
+    descripcion: "Adaptación de tecnología crediticia para créditos individuales y colectivos."
+  },
+  {
+    id: 15,
+    titulo: "Valorización de instituciones y portafolios",
+    descripcion: "Evaluación del valor económico de entidades y sus portafolios financieros."
+  },
+  {
+    id: 16,
+    titulo: "Evaluación institucional patrimonial",
+    descripcion: "Análisis de la solidez patrimonial para fortalecer la entidad."
+  },
+  {
+    id: 17,
+    titulo: "Assessment center",
+    descripcion: "Selección de personal e identificación de talentos con potencial."
+  },
+  {
+    id: 18,
+    titulo: "Estudios salariales",
+    descripcion: "Investigación de la remuneración en el sector microfinanciero."
+  },
+  {
+    id: 19,
+    titulo: "Diagnósticos de capacitación",
+    descripcion: "Detección de necesidades de formación y desarrollo del talento humano."
+  },
+  {
+    id: 20,
+    titulo: "Soluciones digitales y plataformas online",
+    descripcion: "Implementación de herramientas digitales para servicios financieros."
+  },
+  {
+    id: 21,
+    titulo: "Asesoría normativa",
+    descripcion: "Adaptación de procesos a la normativa de la Superintendencia de Bancos, Seguros y AFP."
+  },
+  // Consultorías Especializadas
+  {
+    id: 22,
+    titulo: "Cadenas de valor",
+    descripcion: "Diseño de estrategias para optimizar cadenas productivas y comerciales."
+  },
+  {
+    id: 23,
+    titulo: "Afinación de políticas y estrategia comercial",
+    descripcion: "Mejora de políticas internas y planes comerciales efectivos."
+  },
+  {
+    id: 24,
+    titulo: "Ajustes de manuales",
+    descripcion: "Actualización de manuales internos y guías de procedimientos."
+  },
+  {
+    id: 25,
+    titulo: "Estrategias de retención de personal",
+    descripcion: "Diseño de planes para mejorar la motivación y fidelización del talento."
+  },
+  {
+    id: 26,
+    titulo: "Estrategia comercial",
+    descripcion: "Definición de acciones para impulsar ventas y crecimiento empresarial."
+  },
+  {
+    id: 27,
+    titulo: "Gestión de riesgos",
+    descripcion: "Evaluación y mitigación de riesgos operativos y financieros."
+  },
+  {
+    id: 28,
+    titulo: "Desarrollo de PYMES",
+    descripcion: "Asesoría para fortalecer y hacer crecer pequeñas y medianas empresas."
+  }
+];

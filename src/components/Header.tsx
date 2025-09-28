@@ -36,6 +36,12 @@ export default function Header() {
               Capacitaciones
             </Link>
             <Link
+              to="/Consultancy"
+              className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
+            >
+              Consultorias
+            </Link>
+            <Link
               to="/AboutUs"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
             >

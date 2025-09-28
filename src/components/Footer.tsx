@@ -18,7 +18,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold">MIFCOB</h3>
             <p className="text-background/80">
               Su experto en microfinanzas. Líder en América Latina y el Caribe
-              en desarrollo de capacidades empresariales y consultoría especializada.
+              en fortalecimiento de capacidades empresariales y consultoría especializada.
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
               <Button variant="ghost" size="icon" className="text-background hover:text-primary">
@@ -65,11 +65,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center justify-center md:justify-start space-x-3">
                 <span className="text-primary font-bold">📄</span>
-                <span>RNC: 131-45250-7</span>
+                <a href="mifcob@gmail.com" target="_blank"><span>mifcob@gmail.com</span></a>
               </div>
               <div className="flex items-center justify-center md:justify-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span>América Latina y el Caribe</span>
+                <span>Santo Domingo este</span>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ const Footer = () => {
           "
         >
           <p className="text-background/60 text-sm">
-            © 2024 Microfinance Consulting & Business (MIFCOB) S.R.L. Todos los derechos reservados.
+            © 2025 Microfinance Consulting & Business (MIFCOB) S.R.L. Todos los derechos reservados.
           </p>
           
         </div>

@@ -39,7 +39,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto text-white/90 animate-scale-in">
-            Líder en América Latina y el Caribe en desarrollo de capacidades
+            Líder en América Latina y el Caribe en fortalecimiento de capacidades
             empresariales, microfinanzas, análisis crediticio y gestión
             tributaria.
           </p>

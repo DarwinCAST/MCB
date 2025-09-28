@@ -12,6 +12,7 @@ import Facilitors from "./pages/Facilitors";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./ScrollToTop";
+import Consultancy from "./pages/Consultancy";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Index />} />
           <Route path="/Courses" element={<Courses />} />
+          <Route path="/Consultancy" element={<Consultancy />} />
           <Route path="/Home" element={<Index />} />
           <Route path="/Facilitors" element={<Facilitors />}></Route>
           <Route path="/AboutUs" element={<AboutUs />}></Route>
