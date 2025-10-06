@@ -35,7 +35,7 @@ const ObjectivesSection = () => {
           </h2>
           <div className="w-24 h-1 bg-MCBSecundary mx-auto mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Nuestros objetivos de capacitación están diseñados para mejorar habilidades, 
+            Nuestros objetivos de capacitación y consultorias están diseñados para mejorar habilidades, 
             destrezas y competencias profesionales que permitan el crecimiento sostenible 
             de instituciones y profesionales.
           </p>

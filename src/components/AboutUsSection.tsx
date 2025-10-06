@@ -3,12 +3,12 @@ import { Badge } from "./ui/badge";
 import presentation1 from "@/assets/presentation-1.jpeg";
 import speakerPresentation from "@/assets/speaker-presentation.jpeg";
 import audienceSession from "@/assets/audience-session.jpeg";
-import conferenceRoom from "@/assets/conference-room.jpeg";
+import conferenceRoom from "@/assets/Nosotros.jpeg";
 import trainingSession from "@/assets/training-session.jpeg";
 import meetingRoom from "@/assets/meeting-room.jpeg";
 import professionalSession from "@/assets/professional-session.jpeg";
 import seminarHall from "@/assets/seminar-hall.jpeg";
-import presentation2 from "@/assets/presentation-2.jpeg";
+import presentation2 from "@/assets/hero-image.jpeg";
 
 import {
   BookOpen,
@@ -92,7 +92,7 @@ export default function AboutUsSection() {
                 necesarias para su crecimiento laboral.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Actualmente nuestra mayor actividad se desarrolla en línea,
+                Actualmente nuestras actividades se desarrollan mediante encuentros presenciales y virtuales,
                 implementando programas, proyectos y actividades de capacitación
                 para el sector de Micro y Pequeñas Empresas, instituciones
                 microfinancieras, bancos de desarrollo, cooperativas y jóvenes
@@ -129,13 +129,13 @@ export default function AboutUsSection() {
                       Capacitación Integral
                     </h3>
                     <p className="text-muted-foreground">
-                      Programas especializados en modalidad virtual
+                      Programas especializados en modalidad tanto virtual y presencial
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden">
+            <div className="relative h-100 rounded-lg overflow-hidden">
               <img
                 src={conferenceRoom}
                 alt="Capacitación MIFCOB"
@@ -179,8 +179,8 @@ export default function AboutUsSection() {
             <Card className="text-center">
               <CardHeader>
                 <Users className="h-12 w-12 text-MCBSecundary mx-auto mb-4" />
-                <CardTitle className="text-3xl font-bold">100%</CardTitle>
-                <CardDescription>Modalidad Virtual</CardDescription>
+                <CardTitle className="text-3xl font-bold">50/50</CardTitle>
+                <CardDescription>Modalidad Virtual y Presencial</CardDescription>
               </CardHeader>
             </Card>
 

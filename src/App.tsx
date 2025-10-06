@@ -13,6 +13,7 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./ScrollToTop";
 import Consultancy from "./pages/Consultancy";
+import WorkShop from "./pages/WorkShop";
 
 const queryClient = new QueryClient();
 
@@ -28,12 +29,13 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Index />} />
-          <Route path="/Courses" element={<Courses />} />
-          <Route path="/Consultancy" element={<Consultancy />} />
-          <Route path="/Home" element={<Index />} />
-          <Route path="/Facilitors" element={<Facilitors />}></Route>
-          <Route path="/AboutUs" element={<AboutUs />}></Route>
-          <Route path="/Contact" element={<Contact />}></Route>
+          <Route path="/capacitaciones" element={<Courses />} />
+          <Route path="/consultorias" element={<Consultancy />} />
+          <Route path="/talleres" element={<WorkShop />} />
+          <Route path="/inicio" element={<Index />} />
+          <Route path="/facilitadores" element={<Facilitors />}></Route>
+          <Route path="/nosotros" element={<AboutUs />}></Route>
+          <Route path="/contactanos" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

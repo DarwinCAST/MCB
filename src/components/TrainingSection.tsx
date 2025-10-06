@@ -32,7 +32,7 @@ export default function TrainingSection() {
             <h2 className="text-3xl font-bold">Cuerpo Docente</h2>
           </div>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto text-pretty">
-            Contamos con instructores capacitados en diferentes campos
+            Contamos con consultores capacitados en diferentes campos
             profesionales, de acuerdo a la acción a impartir que cuentan con las
             competencias técnicas y conductuales
           </p>
@@ -51,7 +51,7 @@ export default function TrainingSection() {
             </CardHeader>
             <CardContent>
               <p className="text-slate-600 text-lg">
-                Instructores especializados en sus campos profesionales con
+                Consultores especializados en sus campos profesionales con
                 amplia experiencia práctica
               </p>
             </CardContent>
@@ -385,9 +385,9 @@ export default function TrainingSection() {
 
           <Card variant="elevated" className="text-center p-8 animate-fade-in">
             <div className="text-4xl font-bold text-MCBSecundary mb-2">
-              100%
+50/50
             </div>
-            <div className="text-lg font-semibold mb-2">Modalidad Online</div>
+            <div className="text-lg font-semibold mb-2">Modalidad Virtual y Presencial</div>
             <div className="text-sm text-muted-foreground">
               Capacitación especializada dirigida a ejecutivos, gerentes y
               profesionales

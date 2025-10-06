@@ -17,8 +17,7 @@ const Footer = () => {
           <div className="space-y-4 flex flex-col items-center md:items-start">
             <h3 className="text-2xl font-bold">MIFCOB</h3>
             <p className="text-background/80">
-              Su experto en microfinanzas. Líder en América Latina y el Caribe
-              en fortalecimiento de capacidades empresariales y consultoría especializada.
+              Institución especializada en el fortalecimiento de capacidades empresariales, microfinanzas, análisis crediticio y gestión tributaria en América Latina y el Caribe.
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
               <Button variant="ghost" size="icon" className="text-background hover:text-primary">
@@ -65,11 +64,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center justify-center md:justify-start space-x-3">
                 <span className="text-primary font-bold">📄</span>
-                <a href="mifcob@gmail.com" target="_blank"><span>mifcob@gmail.com</span></a>
+                <a href="mailto:mifcob@gmail.com" target="_blank"><span>mifcob@gmail.com</span></a>
               </div>
               <div className="flex items-center justify-center md:justify-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span>Santo Domingo este</span>
+                <span>Santo Domingo</span>
               </div>
             </div>
           </div>

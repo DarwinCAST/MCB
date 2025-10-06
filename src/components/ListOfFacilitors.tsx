@@ -10,8 +10,8 @@ import JoseMiguel from "@/assets/JoseMiguel.jpeg";
 
 const teamMembers = [
   {
-    name: "Licdo. Engels Fortuna",
-    title: "CEO & Economista",
+    name: "Engels G. Fortuna R., MBA",
+    title: "CEO & Fundador",
     description:
       "Economista con pos-grados en Finanzas y maestría en Banca y Mercados de valores. Profesor universitario, conferencista internacional y consultor empresarial.",
     image: Engels,
@@ -22,7 +22,7 @@ const teamMembers = [
     },
   },
   {
-    name: "Licdo. Hovel Matos Custodio",
+    name: "Hovel Matos Custodio, MBA",
     title: "Contable",
     description:
       "Contador, con post-Grados en Finanzas y Maestría en Banca y Mercados de Valores, más de 20 años de experiencia en el sector de las Micro Finanzas, desempeñando varios cargos de dirección. Además, es emprendedor del sector agrícola. ",
@@ -34,7 +34,7 @@ const teamMembers = [
     },
   },
   {
-    name: "Licdo. Kerbin D. Encarnación",
+    name: "Kerbin D. Encarnación E., M.SC",
     title: "Experto Tributario",
     description:
       "Contador y profesor universitario con maestría en Relaciones Económicas Internacionales. 15 años de experiencia en la DGII.",
@@ -46,10 +46,10 @@ const teamMembers = [
     },
   },
   {
-    name: "Ing. José Miguel Méndez",
+    name: "José Miguel Méndez",
     title: "Consultor Internacional",
     description:
-      "Ing. Agrónomo, orientación Economía Agrícola, máster en Agroforestería. Profesor de universidades ISA, UTESA, UCATECI, UAFAM. Fortaleza en eleaboración de proyectos y planes de negocios, diseño de productos financieros verdes.",
+      "Ing. Agrónomo, orientación Economía Agrícola, máster en Agroforestería. Profesor de universidades ISA, UTESA, UCATECI, UAFAM. Fortaleza en elaboración de proyectos y planes de negocios, diseño de productos financieros verdes.",
     image: JoseMiguel,
     social: {
       linkedin: "#",

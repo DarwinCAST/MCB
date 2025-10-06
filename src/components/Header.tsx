@@ -9,11 +9,11 @@ export default function Header() {
 
   return (
     <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-      <div className="container max-w-7xl mx-auto px-4 py-4">
+      <div className="container max-w-7xl mx-auto px-10 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <Link to="/Home">
+            <Link to="/inicio">
               <img src={logo} alt="MCB Logo" className="h-20 w-32 sm:h-24 sm:w-40" />
             </Link>
           </div>
@@ -30,35 +30,43 @@ export default function Header() {
           {/* Menú desktop */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link
-              to="/Courses"
+              to="/capacitaciones"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
             >
               Capacitaciones
             </Link>
             <Link
-              to="/Consultancy"
+              to="/consultorias"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
             >
               Consultorias
             </Link>
             <Link
-              to="/AboutUs"
+              to="/talleres"
+              className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
+            >
+              Talleres
+            </Link> 
+            <Link
+              to="/nosotros"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
             >
               Nosotros
             </Link>
             <Link
-              to="/Facilitors"
+              to="/facilitadores"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
             >
               Facilitadores
             </Link>
             <Link
-              to="/Contact"
+              to="/contactanos"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
             >
               Contacto
             </Link>
+            
+
           </nav>
         </div>
 

@@ -39,9 +39,8 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto text-white/90 animate-scale-in">
-            Líder en América Latina y el Caribe en fortalecimiento de capacidades
-            empresariales, microfinanzas, análisis crediticio y gestión
-            tributaria.
+          
+            Institución especializada en el fortalecimiento de capacidades empresariales, microfinanzas, análisis crediticio y gestión tributaria en América Latina y el Caribe.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in">

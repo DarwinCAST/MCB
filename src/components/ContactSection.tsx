@@ -237,9 +237,9 @@ export default function ContactSection() {
                       <h3 className="font-semibold text-foreground">
                         Teléfono
                       </h3>
-                      <p className="text-muted-foreground">+1 (809) 000-0000</p>
+                      <p className="text-muted-foreground">+1 (809) 544-2422</p>
                       <p className="text-muted-foreground">
-                        WhatsApp: +1 (809) 000-0001
+                        WhatsApp: +1 (829) 923-1346
                       </p>
                     </div>
                   </div>
@@ -270,7 +270,7 @@ export default function ContactSection() {
                         Horario de Atención
                       </h3>
                       <p className="text-muted-foreground">
-                        Lunes a Viernes: 8:00 AM - 6:00 PM
+                        Lunes a Viernes: 8:30 AM - 6:00 PM
                       </p>
                       <p className="text-muted-foreground">
                         Sábados: 9:00 AM - 2:00 PM

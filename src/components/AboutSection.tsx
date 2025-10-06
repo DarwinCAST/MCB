@@ -25,8 +25,8 @@ const AboutSection = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-lg">
-                  Actualmente la mayor actividad de MIFCOB se desarrolla en línea, implementando 
-                  programas, proyectos y actividades de capacitación, desarrollo empresarial del 
+                  Actualmente la mayor actividad de MIFCOB se desarrolla tanto virtual como presencial, implementando 
+                  consultorias, programas, proyectos y actividades de capacitación, desarrollo empresarial del 
                   sector de Micro y Pequeñas Empresas, instituciones microfinancieras, bancos de 
                   desarrollo y cooperativas.
                 </p>
@@ -64,8 +64,8 @@ const AboutSection = () => {
             </div>
             
             <div className="text-center p-6 bg-white/50 backdrop-blur-sm rounded-lg border border-white/20 shadow-soft animate-fade-in">
-              <div className="text-3xl font-bold text-MCBSecundary mb-2">100%</div>
-              <div className="text-sm text-muted-foreground">Modalidad Online</div>
+              <div className="text-3xl font-bold text-MCBSecundary mb-2">50/50</div>
+              <div className="text-sm text-muted-foreground">Modalidad Virtual y Presencial</div>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { consultorias } from "@/Data";
+import { talleres } from "@/Data";
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { Card } from "./ui/card";
@@ -10,23 +10,25 @@ import {
 } from "./ui/dialog";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/enhanced-button";
 import { ChevronRight } from "lucide-react";
 
-export default function ListOfConsultancy() {
-  const [selectedCourse, setSelectedCourse] = useState<any>(null);
+export default function ListOfWorkshops() {
+  const [selectedTaller, setSelectedTaller] = useState<any>(null);
   const [formData, setFormData] = useState({
     nombre: "",
     apellido: "",
     correo: "",
     telefono: "",
+    razon: "",
   });
   const [isSending, setIsSending] = useState(false);
   const [openInfo, setOpenInfo] = useState(false);
   const [openForm, setOpenForm] = useState(false);
 
-  const handleOpenInfo = (curso: any) => {
-    setSelectedCourse(curso);
+  const handleOpenInfo = (taller: any) => {
+    setSelectedTaller(taller);
     setOpenInfo(true);
   };
 
@@ -36,6 +38,7 @@ export default function ListOfConsultancy() {
       apellido: "",
       correo: "",
       telefono: "",
+      razon: "",
     });
     setOpenInfo(false);
     setOpenForm(true);
@@ -55,52 +58,49 @@ export default function ListOfConsultancy() {
           apellido: `Apellido: ${formData.apellido}`,
           correo: `Correo: ${formData.correo}`,
           telefono: `Teléfono: ${formData.telefono}`,
-          curso: `Curso: ${selectedCourse?.titulo}`,
+          razon: `Razón: ${formData.razon}`,
+          curso: `Taller: ${selectedTaller?.titulo}`,
         },
         "k63CQCw1B0sKH3VX9"
       )
       .then(() => {
-        alert("¡Inscripción enviada exitosamente!");
-        setFormData({ nombre: "", apellido: "", correo: "", telefono: "" });
-        setSelectedCourse(null);
+        alert("¡Solicitud enviada exitosamente!");
+        setFormData({ nombre: "", apellido: "", correo: "", telefono: "", razon: "" });
+        setSelectedTaller(null);
         setOpenForm(false);
       })
       .catch((err) => {
         console.error("Error al enviar el correo:", err);
-        alert("Hubo un error al enviar la inscripción. Intenta de nuevo.");
+        alert("Hubo un error al enviar la solicitud. Intenta de nuevo.");
       })
       .finally(() => setIsSending(false));
   };
 
   return (
-    <section
-      id="cursos"
-      className="pt-10 pb-20 px-4 bg-gradient-to-b from-white to-MCBThird/10"
-    >
-      <div className="container mx-auto max-w-7xl">
+    <section id="talleres" className="pt-10 pb-20 px-4 bg-gradient-to-b from-white to-MCBThird/10">
+      <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Nuestras consultorías
+            Nuestros Talleres
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Diseñadas estratégicamente para potenciar las capacidades de tu
-            organización y ayudarte a superar retos reales.
+            Cada taller está cuidadosamente diseñado para ofrecerte experiencias prácticas y enfocadas, desarrollando las habilidades más relevantes y aplicables en el entorno actual.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {consultorias.map((curso) => (
+        <div className="space-y-6">
+          {talleres.map((taller) => (
             <Card
-              key={curso.id}
+              key={taller.id}
               className="group bg-MCBThird hover:shadow-md transition-all duration-300 border-border"
             >
               <div className="p-6 flex flex-col justify-between h-full">
                 <div>
                   <h3 className="text-2xl font-semibold text-foreground group-hover:text-MCB transition-colors mb-3">
-                    {curso.titulo}
+                    {taller.titulo}
                   </h3>
                   <p className="text-lg text-muted-foreground mb-4 line-clamp-3">
-                    {curso.descripcion}
+                    {taller.descripcionCorta}
                   </p>
                 </div>
 
@@ -108,7 +108,7 @@ export default function ListOfConsultancy() {
                   <Button
                     size="sm"
                     className="bg-MCBSecundary hover:bg-MCB text-white transition-colors"
-                    onClick={() => handleOpenInfo(curso)}
+                    onClick={() => handleOpenInfo(taller)}
                   >
                     Solicitar información
                     <ChevronRight className="w-3 h-3 ml-1" />
@@ -120,28 +120,26 @@ export default function ListOfConsultancy() {
         </div>
       </div>
 
-      {/* Dialog de Información del Curso */}
+      {/* Dialog de Información del Taller */}
       <Dialog open={openInfo} onOpenChange={setOpenInfo}>
-        <DialogContent className="sm:max-w-[500px]">
-          {selectedCourse && (
+        <DialogContent className="sm:max-w-[550px]">
+          {selectedTaller && (
             <>
               <DialogHeader>
                 <DialogTitle className="text-2xl font-semibold text-MCB">
-                  {selectedCourse.titulo}
+                  {selectedTaller.titulo}
                 </DialogTitle>
               </DialogHeader>
-              <div className="mt-4 space-y-3">
-                <p className="text-muted-foreground">
-                  {selectedCourse.informacionAdicional}
+              <div className="mt-4 space-y-4">
+                <p className="text-muted-foreground whitespace-pre-line">
+                  {selectedTaller.descripcion}
                 </p>
-                {selectedCourse.objetivos && (
+                {selectedTaller.areas && (
                   <div>
-                    <h4 className="font-medium text-foreground mb-2">
-                      Objetivos:
-                    </h4>
+                    <h4 className="font-medium text-foreground mb-2">Áreas de dominio:</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      {selectedCourse.objetivos.map((obj: string, i: number) => (
-                        <li key={i}>{obj}</li>
+                      {selectedTaller.areas.map((a: string, i: number) => (
+                        <li key={i}>{a}</li>
                       ))}
                     </ul>
                   </div>
@@ -221,11 +219,24 @@ export default function ListOfConsultancy() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="curso">Curso de Interés</Label>
+              <Label htmlFor="razon">Motivo de interés</Label>
+              <Textarea
+                name="razon"
+                id="razon"
+                value={formData.razon}
+                onChange={(e) =>
+                  setFormData({ ...formData, razon: e.target.value })
+                }
+                placeholder="Cuéntanos qué te motiva a tomar este taller..."
+                required
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="taller">Taller de Interés</Label>
               <Input
-                name="curso"
-                id="curso"
-                value={selectedCourse?.titulo || ""}
+                name="taller"
+                id="taller"
+                value={selectedTaller?.titulo || ""}
                 readOnly
                 className="bg-muted"
               />

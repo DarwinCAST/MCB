@@ -110,7 +110,7 @@ const MissionSection = () => {
                 <h4 className="font-semibold mb-2 text-2xl">Innovación</h4>
                 <p className="text-lg text-muted-foreground">
                   Buscamos constantemente nuevas metodologías y herramientas para abordar 
-                  los desafíos de nuestros clientes.
+                  los desafíos de nuestros clientes y del mercado.
                 </p>
               </div>
 
