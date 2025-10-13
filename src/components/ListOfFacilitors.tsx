@@ -34,7 +34,7 @@ const teamMembers = [
     },
   },
   {
-    name: "Kerbin D. Encarnación E., M.SC",
+    name: "Kerbin D. Encarnación E., M.Sc",
     title: "Experto Tributario",
     description:
       "Contador y profesor universitario con maestría en Relaciones Económicas Internacionales. 15 años de experiencia en la DGII.",

@@ -342,7 +342,7 @@ export default function TrainingSection() {
                 </ul>
               </div>
               <div className="text-center">
-                <Link to="/Contact">
+                <Link to="/contactanos">
                   <Button
                     size="lg"
                     className="text-white font-semibold px-8 py-3"

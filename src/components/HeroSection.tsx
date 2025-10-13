@@ -44,12 +44,12 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in">
-            <Link to="/Courses">
+            <Link to="/capacitaciones">
               <Button variant="glass" size="xl">
                 Capacitaciones
               </Button>
             </Link>
-            <Link to="/AboutUs">
+            <Link to="/nosotros">
               <Button variant="hero" size="xl">
                 Conoce Más
               </Button>
