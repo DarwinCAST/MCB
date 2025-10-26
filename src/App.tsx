@@ -7,7 +7,6 @@ import Index from "./pages/Index";
 import { DayPickerProvider } from "react-day-picker";
 import { Outlet } from "react-router-dom"; // si usas React Router
 import NotFound from "./pages/NotFound";
-import Courses from "./pages/Courses";
 import Facilitors from "./pages/Facilitors";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
@@ -29,7 +28,6 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Index />} />
-          <Route path="/capacitaciones" element={<Courses />} />
           <Route path="/consultorias" element={<Consultancy />} />
           <Route path="/talleres" element={<WorkShop />} />
           <Route path="/inicio" element={<Index />} />
