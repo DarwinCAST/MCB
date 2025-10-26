@@ -1,6 +1,5 @@
 import { useState } from "react";
 import logo from "@/assets/SmallLogo.png";
-import { Button } from "./ui/enhanced-button";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
@@ -29,12 +28,7 @@ export default function Header() {
 
           {/* Menú desktop */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link
-              to="/capacitaciones"
-              className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"
-            >
-              Capacitaciones
-            </Link>
+            
             <Link
               to="/consultorias"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-xl"

@@ -421,6 +421,7 @@ export const consultorias = [
 ];
 
 export const talleres = [
+  // === FISCALIDAD ===
   {
     id: 1,
     categoria: "Fiscalidad",
@@ -483,5 +484,201 @@ export const talleres = [
       "Comprende los impuestos sobre herencias y donaciones y evita problemas legales y fiscales.",
     descripcion:
       "Análisis del marco legal para la liquidación de impuestos sobre transferencias de bienes por causa de muerte o a título gratuito. Se explican procedimientos, plazos, valoración de activos, exenciones aplicables y procesos administrativos ante la DGII.",
+  },
+
+  // === OTROS CURSOS / TALLERES ===
+  {
+    id: 7,
+    categoria: "Finanzas",
+    titulo:
+      "Taller Modelo Sistematizado y Estandarizado de Cobranzas Efectivas",
+    duracion: "16 horas",
+    descripcionCorta:
+      "Aprende técnicas avanzadas para optimizar procesos de cobranza y mejorar la recuperación de cartera.",
+    descripcion:
+      "Aprende técnicas avanzadas para optimizar procesos de cobranza, implementar modelos sistematizados y mejorar la recuperación de cartera mediante estrategias efectivas.",
+  },
+  {
+    id: 8,
+    categoria: "Créditos",
+    titulo: "Análisis de Créditos Basados en Árbol de Decisiones Crediticias",
+    duracion: "24 horas",
+    descripcionCorta:
+      "Domina herramientas modernas para la evaluación de riesgos crediticios.",
+    descripcion:
+      "Domina las herramientas de evaluación crediticia basadas en árboles de decisiones, para tomar decisiones informadas, reducir riesgos y fortalecer la gestión del crédito.",
+  },
+  {
+    id: 9,
+    categoria: "Gestión",
+    titulo:
+      "Taller de Administración y Gestión Efectiva de Carteras Basada en Círculos del Cliente",
+    duracion: "24 horas",
+    descripcionCorta:
+      "Estrategias de gestión de cartera centradas en la experiencia del cliente.",
+    descripcion:
+      "Implementa estrategias integrales para la gestión de carteras enfocadas en los círculos del cliente, mejorando la fidelización y eficiencia operativa.",
+  },
+  {
+    id: 10,
+    categoria: "Tecnología",
+    titulo:
+      "Estandarización de la Gestión Crediticia en Círculo Basado en la Tecnología",
+    duracion: "16 horas",
+    descripcionCorta:
+      "Aplica tecnología moderna para estandarizar procesos crediticios.",
+    descripcion:
+      "Implementa herramientas tecnológicas que permitan estandarizar y automatizar los procesos crediticios, mejorando la precisión y productividad institucional.",
+  },
+  {
+    id: 11,
+    categoria: "Liderazgo",
+    titulo: "Liderazgo Efectivo y Efectividad Organizacional",
+    duracion: "16 horas",
+    descripcionCorta:
+      "Desarrolla habilidades de liderazgo que impulsen la efectividad de tu organización.",
+    descripcion:
+      "Fortalece tus competencias de liderazgo mediante metodologías prácticas que fomentan la efectividad organizacional, el trabajo en equipo y la comunicación efectiva.",
+  },
+  {
+    id: 12,
+    categoria: "Gerencia",
+    titulo: "Diplomado de Habilidades Directivas y Gerenciales",
+    duracion: "24-48 horas",
+    descripcionCorta:
+      "Desarrolla competencias directivas de alto nivel para la gestión moderna.",
+    descripcion:
+      "Programa integral enfocado en el desarrollo de competencias gerenciales, liderazgo, toma de decisiones, planeación estratégica y gestión del talento humano.",
+  },
+  {
+    id: 13,
+    categoria: "Emprendimiento",
+    titulo:
+      "Programa de Formación de Creación de Empresas y Elaboración de Planes de Negocios",
+    duracion: "36 horas",
+    descripcionCorta:
+      "Aprende a crear y estructurar empresas exitosas desde cero.",
+    descripcion:
+      "Capacitación orientada al desarrollo de emprendimientos, desde la conceptualización hasta la ejecución. Incluye formulación de planes de negocio, análisis de mercado y viabilidad financiera.",
+  },
+  {
+    id: 14,
+    categoria: "Desarrollo Personal",
+    titulo: "Taller de Desarrollo Humano",
+    duracion: "Variable",
+    descripcionCorta:
+      "Potencia tu crecimiento personal y profesional con técnicas de desarrollo humano.",
+    descripcion:
+      "Explora herramientas para mejorar tu autoconocimiento, inteligencia emocional, motivación y bienestar integral tanto en el ámbito personal como laboral.",
+  },
+  {
+    id: 15,
+    categoria: "Gestión",
+    titulo: "Cursos y Talleres para Mejorar la Gestión Empresarial",
+    duracion: "Variable",
+    descripcionCorta:
+      "Optimiza la gestión y operación de tu empresa con herramientas modernas.",
+    descripcion:
+      "Herramientas prácticas para optimizar la gestión empresarial, la planificación estratégica, la productividad y la eficiencia organizacional.",
+  },
+  {
+    id: 16,
+    categoria: "Servicio al Cliente",
+    titulo: "Taller Gestión de la Calidad en el Servicio al Cliente",
+    duracion: "16 horas",
+    descripcionCorta:
+      "Aprende a implementar estándares de calidad en el servicio para mejorar la experiencia del cliente.",
+    descripcion:
+      "Enfocado en la satisfacción del cliente mediante la gestión de la calidad. Incluye técnicas de atención, fidelización y resolución de problemas.",
+  },
+  {
+    id: 17,
+    categoria: "Servicio al Cliente",
+    titulo: "Curso de Manejo de Clientes Difíciles",
+    duracion: "8 horas",
+    descripcionCorta:
+      "Domina estrategias efectivas para tratar clientes desafiantes con profesionalismo.",
+    descripcion:
+      "Aprende técnicas prácticas para manejar conflictos, gestionar emociones y mantener relaciones positivas con clientes exigentes o difíciles.",
+  },
+  {
+    id: 18,
+    categoria: "Finanzas",
+    titulo: "Taller de Finanzas Personales",
+    duracion: "8 horas",
+    descripcionCorta:
+      "Aprende a planificar y controlar tus finanzas personales eficazmente.",
+    descripcion:
+      "Conoce las herramientas básicas de planificación financiera, ahorro, inversión y manejo responsable del dinero para alcanzar estabilidad económica.",
+  },
+  {
+    id: 19,
+    categoria: "Costos",
+    titulo: "Curso-Taller Costo de Producción en la Empresa",
+    duracion: "16 horas",
+    descripcionCorta:
+      "Domina el cálculo y control de costos de producción para maximizar la rentabilidad.",
+    descripcion:
+      "Capacitación orientada al análisis, registro y control de los costos de producción, con enfoque en la mejora de márgenes y eficiencia operativa.",
+  },
+  {
+    id: 20,
+    categoria: "Emprendimiento",
+    titulo: "Taller de Emprendimiento y Finanzas Personales",
+    duracion: "8 horas",
+    descripcionCorta:
+      "Combina habilidades emprendedoras con gestión financiera para lograr éxito integral.",
+    descripcion:
+      "Aprende a emprender con propósito, planificar tus finanzas personales y desarrollar la mentalidad financiera necesaria para el éxito sostenible.",
+  },
+  {
+    id: 21,
+    categoria: "Administración",
+    titulo: "Taller de Administración de Recursos",
+    duracion: "12 horas",
+    descripcionCorta:
+      "Optimiza la gestión de recursos humanos, materiales y financieros en tu organización.",
+    descripcion:
+      "Explora metodologías para la administración eficiente de los recursos disponibles, promoviendo la sostenibilidad y la productividad institucional.",
+  },
+  {
+    id: 22,
+    categoria: "Trabajo en Equipo",
+    titulo: "Curso Taller de Trabajo en Equipo",
+    duracion: "12 horas",
+    descripcionCorta:
+      "Desarrolla equipos de alto rendimiento con comunicación y colaboración efectiva.",
+    descripcion:
+      "Fomenta el trabajo en equipo, la cooperación y la sinergia grupal mediante dinámicas participativas y herramientas de liderazgo colaborativo.",
+  },
+  {
+    id: 23,
+    categoria: "Contabilidad",
+    titulo: "Contabilidad Básica y Contabilidad Fiscal",
+    duracion: "24 horas",
+    descripcionCorta:
+      "Domina los fundamentos contables y fiscales esenciales para tu empresa.",
+    descripcion:
+      "Curso enfocado en los principios de contabilidad general, registros básicos, estados financieros y su aplicación en la contabilidad fiscal dominicana.",
+  },
+  {
+    id: 24,
+    categoria: "Negociación",
+    titulo: "Técnicas de Negociación y Manejo de Conflictos",
+    duracion: "12 horas",
+    descripcionCorta:
+      "Aprende a negociar efectivamente y resolver conflictos de manera constructiva.",
+    descripcion:
+      "Herramientas y estrategias para negociar con éxito, manejar desacuerdos y alcanzar acuerdos beneficiosos en entornos laborales y comerciales.",
+  },
+  {
+    id: 25,
+    categoria: "Liderazgo",
+    titulo: "Liderazgo para Gerentes",
+    duracion: "16 horas",
+    descripcionCorta:
+      "Desarrolla liderazgo estratégico para fortalecer tu rol como gerente.",
+    descripcion:
+      "Programa especializado que potencia las habilidades de dirección, motivación, comunicación y toma de decisiones para gerentes y supervisores.",
   },
 ];
