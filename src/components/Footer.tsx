@@ -19,17 +19,6 @@ const Footer = () => {
             <p className="text-background/80">
               Institución especializada en el fortalecimiento de capacidades empresariales, microfinanzas, análisis crediticio y gestión tributaria en América Latina y el Caribe.
             </p>
-            <div className="flex justify-center md:justify-start space-x-4">
-              <Button variant="ghost" size="icon" className="text-background hover:text-primary">
-                <Linkedin className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-background hover:text-primary">
-                <Twitter className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-background hover:text-primary">
-                <Facebook className="w-5 h-5" />
-              </Button>
-            </div>
           </div>
 
           {/* Quick Links */}

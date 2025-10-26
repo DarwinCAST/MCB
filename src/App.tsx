@@ -4,8 +4,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import { DayPickerProvider } from "react-day-picker";
-import { Outlet } from "react-router-dom"; // si usas React Router
 import NotFound from "./pages/NotFound";
 import Facilitors from "./pages/Facilitors";
 import AboutUs from "./pages/AboutUs";
