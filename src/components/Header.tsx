@@ -80,21 +80,21 @@ export default function Header() {
               Talleres
             </Link>
             <Link
-              to="/AboutUs"
+              to="/nosotros"
               onClick={() => setOpen(false)}
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
             >
               Nosotros
             </Link>
             <Link
-              to="/Facilitors"
+              to="/facilitadores"
               onClick={() => setOpen(false)}
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
             >
               Facilitadores
             </Link>
             <Link
-              to="/Contact"
+              to="/contactanos"
               onClick={() => setOpen(false)}
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
             >

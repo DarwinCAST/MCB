@@ -4,7 +4,6 @@ import MissionSection from "@/components/MissionSection";
 import ObjectivesSection from "@/components/ObjectivesSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import ListOfFacilitors from "@/components/ListOfFacilitors";
 import TrainingSection from "@/components/TrainingSection";
 
 const Index = () => {
