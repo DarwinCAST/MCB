@@ -44,7 +44,7 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in">
-            <Link to="/capacitaciones">
+            <Link to="/talleres">
               <Button variant="glass" size="xl">
                 Capacitaciones
               </Button>
