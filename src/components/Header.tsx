@@ -68,6 +68,13 @@ export default function Header() {
         {open && (
           <div className="md:hidden mt-4 flex flex-col space-y-4">
             <Link
+              to="/nosotros"
+              onClick={() => setOpen(false)}
+              className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
+            >
+              Nosotros
+            </Link>
+            <Link
               to="/consultorias"
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
             >
@@ -78,13 +85,6 @@ export default function Header() {
               className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
             >
               Talleres
-            </Link>
-            <Link
-              to="/nosotros"
-              onClick={() => setOpen(false)}
-              className="text-foreground hover:text-lime-700 transition-colors font-bold text-lg"
-            >
-              Nosotros
             </Link>
             <Link
               to="/facilitadores"
